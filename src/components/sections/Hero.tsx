@@ -80,12 +80,6 @@ export const Hero = () => {
           >
             View Projects
           </a>
-          <a
-            href="#contact"
-            className="px-8 py-4 rounded-full glass-card text-white font-semibold text-lg hover:bg-white/10 transition-all duration-300 border border-white/10 hover:border-neonPurple/50 hover-target glow-purple hover:glow-purple"
-          >
-            Download CV
-          </a>
         </motion.div>
       </motion.div>
     </section>
