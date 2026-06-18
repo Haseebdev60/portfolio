@@ -76,6 +76,7 @@ export const Navbar = () => {
             <span className="relative z-10">Hire Me</span>
           </a>
         </div>
+      </div>
     </motion.nav>
   );
 };
