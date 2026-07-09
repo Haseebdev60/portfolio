@@ -1,24 +1,45 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
   <defs>
+    <!-- Core colors of your portfolio: Neon Blue (#00f3ff) to Neon Purple (#b026ff) -->
     <linearGradient id="neonGrad" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#00f3ff" />
+      <stop offset="50%" stop-color="#7000ff" />
       <stop offset="100%" stop-color="#b026ff" />
     </linearGradient>
-    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="12" result="blur" />
+    
+    <!-- Intense glow filter -->
+    <filter id="neonGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="18" result="blur1" />
+      <feGaussianBlur in="SourceGraphic" stdDeviation="8" result="blur2" />
       <feMerge>
-        <feMergeNode in="blur" />
+        <feMergeNode in="blur1" />
+        <feMergeNode in="blur2" />
         <feMergeNode in="SourceGraphic" />
       </feMerge>
     </filter>
   </defs>
-  <!-- Circular plate with a neon gradient border -->
-  <circle cx="256" cy="256" r="236" fill="#0b0b0f" stroke="url(#neonGrad)" stroke-width="12" />
+
+  <!-- Dark glassmorphic background disc to stand out on both dark and light browser tabs -->
+  <circle cx="256" cy="256" r="230" fill="#0c0d12" stroke="url(#neonGrad)" stroke-width="8" opacity="0.95" />
   
-  <!-- Glowing Monogram "H" -->
-  <g filter="url(#glow)">
-    <path d="M170 140 L170 372" stroke="url(#neonGrad)" stroke-width="40" stroke-linecap="round" />
-    <path d="M342 140 L342 372" stroke="url(#neonGrad)" stroke-width="40" stroke-linecap="round" />
-    <path d="M170 256 L342 256" stroke="url(#neonGrad)" stroke-width="40" stroke-linecap="round" />
+  <!-- Outer accent glowing ring -->
+  <circle cx="256" cy="256" r="214" fill="none" stroke="url(#neonGrad)" stroke-width="2" opacity="0.4" stroke-dasharray="10 15" />
+
+  <!-- The "H" Monogram with Premium Dual-Layer Neon Glow -->
+  <g filter="url(#neonGlow)">
+    <!-- 1. Background Neon Gradient Base (Thick Glow) -->
+    <path d="M185 140 V372 M327 140 V372 M185 256 H327" 
+          stroke="url(#neonGrad)" 
+          stroke-width="44" 
+          stroke-linecap="round" 
+          stroke-linejoin="round" />
+          
+    <!-- 2. Foreground Intense Light Core (Thin White Line) -->
+    <path d="M185 146 V366 M327 146 V366 M190 256 H322" 
+          stroke="#ffffff" 
+          stroke-width="12" 
+          stroke-linecap="round" 
+          stroke-linejoin="round" 
+          opacity="0.95" />
   </g>
 </svg>
