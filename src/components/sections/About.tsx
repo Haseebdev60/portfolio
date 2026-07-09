@@ -67,7 +67,7 @@ export const About = () => {
             </div>
 
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 pt-8">
-              <Counter value="5+" label="Years Exp." />
+              <Counter value="3+" label="Years Exp." />
               <Counter value="50+" label="Projects" />
               <Counter value="100%" label="Satisfaction" />
             </div>

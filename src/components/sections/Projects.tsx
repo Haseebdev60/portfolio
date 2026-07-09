@@ -12,6 +12,17 @@ const projectsData = [
     tech: ['React', 'Node.js', 'MongoDB', 'Tailwind CSS', 'Framer Motion', 'Express'],
     liveUrl: 'https://scholarlybackend.vercel.app/',
     githubUrl: '#'
+  },
+  {
+    id: 2,
+    title: 'Campus Book Store',
+    category: 'Academic Marketplace',
+    description: 'A modern academic book marketplace and inventory system tailored for university campus communities. Features seamless browsing, student listings, and campus-based trade coordination.',
+    results: 'High-performance platform facilitating academic book exchanges with intuitive student interactions.',
+    image: 'https://images.unsplash.com/photo-1506880018603-83d5b814b5a6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
+    tech: ['React', 'Vite', 'Tailwind CSS', 'TypeScript', 'Framer Motion'],
+    liveUrl: 'https://campus-bookstore-app.vercel.app/',
+    githubUrl: 'https://github.com/Haseebdev60/campus-bookstore-app'
   }
 ];
 
@@ -84,7 +95,7 @@ export const Projects = () => {
           <p className="text-gray-400 mt-4 max-w-md mx-auto">Premium digital experiences crafted with modern technologies.</p>
         </div>
 
-        <div className="flex justify-center">
+        <div className="flex flex-wrap justify-center gap-8">
           {projectsData.map((project) => (
             <ProjectCard key={project.id} project={project} />
           ))}
