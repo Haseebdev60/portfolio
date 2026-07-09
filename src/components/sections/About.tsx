@@ -44,7 +44,7 @@ export const About = () => {
               <div className="w-full h-full bg-black/50 rounded-xl overflow-hidden relative">
                 <img 
                   src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
-                  alt="Haseeb Ashfaq" 
+                  alt="Haseeb Dev" 
                   className="w-full h-full object-cover opacity-80 mix-blend-luminosity hover:mix-blend-normal transition-all duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-background to-transparent opacity-60" />

@@ -52,7 +52,7 @@ export const Hero = () => {
         </motion.div>
 
         <h1 className="text-6xl md:text-8xl font-display font-bold tracking-tighter mb-4 text-white">
-          <SplitText text="Haseeb" /> <span className="text-gradient"><SplitText text="Ashfaq" /></span>
+          <SplitText text="Haseeb" /> <span className="text-gradient"><SplitText text="Dev" /></span>
         </h1>
         
         <h2 className="text-2xl md:text-4xl font-display text-gray-400 mb-8 font-medium">
